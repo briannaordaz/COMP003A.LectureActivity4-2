@@ -20,6 +20,16 @@ class Program
         string name = Console.ReadLine(); //Store user input in 'name'
         Console.WriteLine($"Hello, {name}! Welcome to the Methods Activity.");
     }
-    
-   
+
+    ///<summary>
+    /// Calculates the sum of two numbers and returns the result.
+    /// </summary>
+    /// <param name="num1">Integer Input Number 1</param>
+    /// param name="num2">Integer Input Number 2</param>
+    /// <returns>Integer sum of the two integer inputs</returns>
+
+    static int CalculateSum(int num1, int num2)
+    {
+        return num1 + num2;  // Add the two numbers and return the result
+    }
 }
