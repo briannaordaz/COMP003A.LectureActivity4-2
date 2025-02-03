@@ -32,4 +32,17 @@ class Program
     {
         return num1 + num2;  // Add the two numbers and return the result
     }
+
+    /// <summary>
+    /// Displays the contents of an array.
+    /// </summary>
+    /// <param name="numbers">Array collection of integers</param>
+
+    static void DisplayArray(int[] numbers)
+    {
+        foreach (int num in numbers) // Loop through the array
+        {
+            Console.WriteLine(num); // print each number
+        }
+    }
 }
