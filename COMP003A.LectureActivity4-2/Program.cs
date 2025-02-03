@@ -9,4 +9,17 @@ class Program
     {
         Console.WriteLine("Hello, World!");
     }
+
+    /// <summary>
+    /// Greets the user by name.
+    /// </summary>
+
+    static void GreetUser()
+    {
+        Console.Write("Enter your name: ");
+        string name = Console.ReadLine(); //Store user input in 'name'
+        Console.WriteLine($"Hello, {name}! Welcome to the Methods Activity.");
+    }
+    
+   
 }
