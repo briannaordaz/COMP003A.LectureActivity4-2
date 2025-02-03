@@ -7,7 +7,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        //Greet the user
+        GreetUser();
+        
+        //Input two numbers and calculate their sum
+        Console.Write("Enter the first number: ");
+        int num1 = int.Parse(Console.ReadLine()); // Parse user input to an integer
+        
+        Console.Write("Enter the second number: ");
+        int num2 = int.Parse(Console.ReadLine()); // Parse user input to an integer
+
+        int sum = CalculateSum(num1, num2); // Call the method and store the result
+        Console.WriteLine($"The sum of {num1} and {num2} is {sum}. ");
+        
+        // Display the contents of an array
+        int[] numbers = { 10, 20, 30, 40, 50 }; // Initialize an array
+        Console.WriteLine("Array contents:");
+        DisplayArray(numbers); // Call the method to print the arra
     }
 
     /// <summary>
